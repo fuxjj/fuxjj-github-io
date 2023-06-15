@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Website</title>
+    <script src="logic.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/IMG_1060.jpg">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="qualifications-nav"><a href="#qualifications">Qualifications</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home"> <!--Home section-->
+        <br>
+        <br>
+        <br>
+        <div class="homeColumn home">
+            <h1 class="welcome">Welcome</h1>
+            <p class="welcomeParagraph">to my Resume Website</p>
+            
+        </div>
+
+        <div class="homeColumn home">
+            <img class="disp" src="img/image.png" alt="Profile image" width="300" height="200">
+        </div>
+    </section>
+
+    <section id="about"> <!--About me section-->
+        <div class="homeColumn">
+            <h1>About myself</h1>
+            <hr class="lineBreak">
+            <p class="about-p">Hello! Welcome to my Resume website. I am an aspiring web developer trying to grow my skills and achieve a career developing websites. I have been interested in technology from a young age as I grew up at a time when technology was starting to increase in both popularity and power, which fascinated me. From then I had tried to learn as much as I could about technology, and decided to choose a career in web development as it interested me the most.</p>
+
+        </div>
+
+        <div class="homeColumn">
+            <h1>About the website</h1>
+            <hr class="lineBreak">
+            <p class="about-p">This website was designed to showcase my skills and allow me to experiment with html, css and javascript. During the creation of this website, I learnt alot about html and css and started to learn about javascript in hopes of improving my skills. This website was made completely from scratch(with a little help from <a class="link" href="https://www.w3schools.com" target="_blank"><strong>W3Schools</strong></a> and <a class="link" href="https://stackoverflow.com" target="_blank"><strong>stackOverflow</strong></a> ).Please take your time to look around the website and find any issues that may arise!</p>
+        </div>
+    </section>
+
+
+    <section id="qualifications">
+
+        <h1 class="qualifications">Qualifications</h1>
+
+        <div class="popup" id="popup-1">
+            <div class="overlay" onclick="togglegcse()"></div>
+            <div class="content">
+                <div class="closeBtn" onclick="togglegcse()">&times;</div>
+                <h1>GCSE</h1>
+                <p>2015 - 2020</p>
+                <ol class="list">
+                    <li class="list">English language - 5</li>
+                    <li class="list">English literature - 4</li>
+                    <li class="list">Mathematics - 4</li>
+                    <li class="list">Combined science - 4-4</li>
+                    <li class="list">Computer Science - 4</li>
+                    <li class="list">Sociology - 4</li>
+                    <li class="list">Business - 3</li>
+                    <li class="list">Hospitality and Catering - Pass</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-2">
+            <div class="overlay" onclick="toggleAlevel()"></div>
+            <div class="content">
+                <div class="closeBtn" onclick="toggleAlevel()">&times;</div>
+                <h1>A-Level + WP</h1>
+                <p>2020 - 2022</p>
+                <p><em>During A-Level, I took part in a 3 month long work placement with the Oldham Council as a part of my  Digital T-Level course.</em></p>
+                <p><strong>Grade - Merit</strong></p>
+            </div>
+        </div>
+
+        <div class="popup" id="popup-3">
+            <div class="overlay" onclick="toggleUniversity()"></div>
+            <div class="content">
+                <div class="closeBtn" onclick="toggleUniversity()">&times;</div>
+                <h1>University</h1>
+                <p>Present - 2026~</p>
+                <p>Currently in university studying <strong>(BSc)Software Engineering</strong></p>
+                
+            </div>
+        </div>
+
+        <button class="Button" onclick="togglegcse()">GCSE</button>
+        <button class="Button" onclick="toggleAlevel()">A-Level + Work placement</button>
+        <button class="Button" onclick="toggleUniversity()">University</button>
+    </section>
+
+    <footer>
+        <h2 class="copy">Copyright &copy; Junaid Ahmed 2023</h2>
+        <p class="contact">Phone num: +44 7458310508</p>
+        <p class="contact">Email: ja894483@gmail.com</p>
+        <p class="contact">LinkedIn: <a class="contactLink" href="https://www.linkedin.com/in/mohammed-ahmed-83608b23b/" target="_blank">Click me!</a></p>
+    </footer>
+</body>
+
+</html>
