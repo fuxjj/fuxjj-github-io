@@ -45,6 +45,7 @@ footer {
 
 .qualifications {
     text-align: center;
+    position: relative;
 }
 
 .qualifications-nav {
@@ -52,12 +53,18 @@ footer {
 }
 
 .Button {
-    height: 100px;
-    width: 400px;
-    margin: 105px;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    border: none;
     display: inline-block;
     background-color: #212121;
     color: #fafafa;
+    padding: 20px 32px;
+    margin: 105px;
+    @media only screen and (max-width: 600px) {
+        margin: 40px;
+    }
 }
 
 .Button:hover {
@@ -65,18 +72,11 @@ footer {
     background-color: #303030;
 }
 
-.column {
-    float: left;
-    width: 50%;
-    text-align: center;
-    overflow: hidden;
-}
-
 .homeColumn {
     float: left;
     width: 50%;
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
     height: 450px;
 }
 
@@ -84,7 +84,8 @@ footer {
     text-align: center;
     padding: 15px;
     height: auto;
-    max-width: 100%;
+    width: 100%;
+    max-width: 300px;
     border-radius: 25px;
 }
 
